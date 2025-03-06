@@ -4,6 +4,7 @@ import React from "react";
 import BookCard from "./components/BookCard";
 import books from "./booksData";
 import "./Home.css"; // Import the CSS for styling
+import AddBookButton from "./components/AddButton";
 
 const Home = () => {
   return (
@@ -13,7 +14,10 @@ const Home = () => {
         {books.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
+        <AddBookButton/>
+
       </div>
+    
     </div>
   );
 };
